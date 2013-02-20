@@ -6,4 +6,18 @@
         endPoint    : {x:0, y:Ti.Platform.displayCaps.platformHeight},
         backFillStart:false
     },
+},
+'Label'     : {
+    width       : Ti.UI.Size,
+    height      : Ti.UI.Size,
+    color       : '#fff',
+    left        : 20,
+    bottom      : 40,
+    textAlign   : Ti.UI.TEXT_ALIGNMENT_CENTER,
+    shadowColor : 'rgba(0,0,0,.9)',
+    shadowOffset: {x:1, y:1},
+    font        : {
+        fontFamily  : 'HelveticaNeue-UltraLight',
+        fontSize    : 33
+    }
 }

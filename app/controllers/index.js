@@ -1,13 +1,18 @@
+var calculator      = Alloy.createController('Calculator');
+
 var acitve_slide    = 0;
 var slides          = [
-    Alloy.createController('TargetGravity').getView(),
-    Alloy.createController('ActualGravity').getView(),
-    Alloy.createController('Temperature').getView(),
-    Alloy.createController('Volume').getView()
+    Alloy.createController('TargetGravity'),
+    Alloy.createController('ActualGravity'),
+    Alloy.createController('Temperature'),
+    Alloy.createController('Volume')
 ];
 
 for(var i=0; i<slides.length; i++){
-    $.container.addView(slides[i]);
+    $.container.addView(slides[i].getView());
+    Ti.App.addEventListener(slides[i].name, function(e) {
+        $.result.text = calculator.calculate(e);
+    });
 }
 
 $.index.open();

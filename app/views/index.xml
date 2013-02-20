@@ -1,5 +1,6 @@
 <Alloy>
     <Window class='window'>
         <ScrollableView id='container'></ScrollableView>
+        <Label id='result'>Do Nothing...</Label>
     </Window>
 </Alloy>
