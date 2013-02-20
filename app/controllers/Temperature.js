@@ -1,15 +1,9 @@
-exports.baseController  = 'Slide';
+exports.baseController = 'Slide';
 
-var name                = 'temperature';
-var value               = 100;
-$.label.text            = 'Temperature';
-$.modifier.text         = '100°F';
-exports.name            = name;
-
-this.view.modify_value  = function(val){
-    value += val;
-    $.modifier.text = this.round(value, 0) + '°F';
-    Ti.App.fireEvent(name, {
-        value : value
-    });
+this.me.update_value = function(val){
+    $.value.text = this.round(val, 0) + '°F';
 };
+
+this.me.name = 'Temperature';
+$.label.text = 'Temperature';
+this.me.update_value(this.me.get_value());

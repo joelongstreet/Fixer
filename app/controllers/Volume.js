@@ -1,15 +1,14 @@
-exports.baseController  = 'Slide';
+exports.baseController = 'Slide';
 
-var name                = 'volume';
-var value               = 5.5;
-$.label.text            = 'Volume';
-$.modifier.text         = '5.5';
-exports.name            = name;
-
-this.view.modify_value  = function(val){
-    value += val/10;
-    $.modifier.text = this.round(value, 1);
-    Ti.App.fireEvent(name, {
-        value : value
-    });
+this.me.modifier = function(val){
+    var value = this.get_value() + val/10;
+    return value;
 };
+
+this.me.update_value = function(val){
+    $.value.text = this.round(val, 1);
+};
+
+this.me.name = 'Volume';
+$.label.text = 'Volume';
+this.me.update_value(this.me.get_value());
