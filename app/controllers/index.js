@@ -12,9 +12,7 @@ for(var i=0; i<slides.length; i++){
 
 $.index.open();
 
-/*
 var bubble_int = setInterval(function(){
-    var bubble = Alloy.createController('bubble');
+    bubble = Alloy.createController('Bubble');
     bubble.append_to_view($.index);
 }, 350);
-*/

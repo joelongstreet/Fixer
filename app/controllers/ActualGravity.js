@@ -1,4 +1,4 @@
-exports.baseController  ='Slide';
+exports.baseController  = 'Slide';
 
 var value               = 1.040;
 $.label.text            = 'Actual Gravity';
