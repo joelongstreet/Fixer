@@ -1,10 +1,10 @@
 exports.baseController  ='Slide';
 
-var value               = 1.040;
+var value               = 100;
 $.label.text            = 'Temperature';
-$.modifier.text         = '1.040';
+$.modifier.text         = '100°F';
 
 this.view.modify_value  = function(val){
-    value += val/1000;
-    $.modifier.text = this.round(value, 3);
+    value += val;
+    $.modifier.text = this.round(value, 0) + '°F';
 }

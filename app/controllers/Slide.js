@@ -30,7 +30,7 @@ function Slide(){
     this.modify_value = function(val){};
 
     this.round = function(val, decimals){
-        var rounder = 0
+        var rounder = 1;
 
         if(decimals == 1)        { rounder = 10}
         else if(decimals == 2)   { rounder = 100}
