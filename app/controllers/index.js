@@ -1,6 +1,4 @@
 var calculator      = Alloy.createController('Calculator');
-
-var acitve_slide    = 0;
 var slides          = [
     Alloy.createController('TargetGravity'),
     Alloy.createController('ActualGravity'),
