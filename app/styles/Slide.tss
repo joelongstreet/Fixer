@@ -1,0 +1,27 @@
+'View'      : {
+    height      : Ti.Platform.displayCaps.platformHeight,
+    width       : Ti.Platform.displayCaps.platformWidth
+},
+'Label'     : {
+    width       : Ti.UI.Size,
+    height      : Ti.UI.Size,
+    color       : '#fff',
+    right       : 20,
+    textAlign   : Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    shadowColor : 'rgba(0,0,0,.5)',
+    shadowOffset: {x:1, y:1}
+},
+'#label'    : {
+    top         : 40,
+    font        : {
+        fontFamily  : 'HelveticaNeue-UltraLight',
+        fontSize    : 33
+    }
+},
+'#modifier' : {
+    top         : 80,
+    font        : {
+        fontFamily  : 'HelveticaNeue-UltraLight',
+        fontSize    : 55
+    }
+}

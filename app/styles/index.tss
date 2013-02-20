@@ -1,0 +1,9 @@
+'Window'    : {
+    backgroundGradient : {
+        type        : 'linear',
+        colors      : ['#75283c', '#e1a521'],
+        startPoint  : {x:0, y:0},
+        endPoint    : {x:0, y:Ti.Platform.displayCaps.platformHeight},
+        backFillStart:false
+    },
+}

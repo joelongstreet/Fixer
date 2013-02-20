@@ -1,0 +1,6 @@
+<Alloy>
+    <View id='container'>
+        <Label id='label'>Label</Label>
+        <Label id='modifier'>Modifier</Label>
+    </View>
+</Alloy>
