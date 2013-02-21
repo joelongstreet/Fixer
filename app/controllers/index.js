@@ -1,10 +1,13 @@
+// Setup Default Values
 Alloy.Globals.defaults = {
     'Target Gravity'  : 1.040,
     'Actual Gravity'  : 1.040,
     'Temperature'     : 100,
     'Volume'          : 5.5
 };
+// ---->
 
+// Build Slides and Calculate Function
 var calculator      = Alloy.createController('Calculator');
 var slides          = [
     Alloy.createController('TargetGravity'),
@@ -19,12 +22,13 @@ for(var i=0; i<slides.length; i++){
         $.result.text = calculator.calculate(e);
     });
 }
+// ---->
 
+
+// Listen for Global Events
 Ti.App.addEventListener('scroll', function(val){
     $.container.setScrollingEnabled(val.result)
 });
-
-$.index.open();
 
 Ti.Gesture.addEventListener('shake', function(){
     calculator.reset();
@@ -36,8 +40,25 @@ Ti.Gesture.addEventListener('shake', function(){
         slides[i].me.set_value()
     }
 });
+// ---->
 
+
+// Some Eye Candy
 var bubble_int = setInterval(function(){
     bubble = Alloy.createController('Bubble');
     bubble.append_to_view($.index);
 }, 350);
+
+/*var animator        = Alloy.createController('CircleAnimation');
+var animate_circles = function(){
+    $.circle.animate(animator.make_animation($.circle));
+    $.circle2.animate(animator.make_animation($.circle2));
+}
+animate_circles();
+setInterval(animate_circles, 30000);*/
+// ---->
+
+
+// OPEN!!!
+$.index.open();
+// ---->

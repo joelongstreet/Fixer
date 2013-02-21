@@ -18,4 +18,25 @@
         fontFamily  : 'HelveticaNeue-UltraLight',
         fontSize    : 33
     }
+},
+'.circle'   : {
+    top             : 250,
+    left            : 0,
+    width           : 500,
+    height          : 505,
+    opacity         : '.3',
+    mode            : Ti.UI.BLEND_MODE_COLOR
+},
+'.shape'    : {
+    width           : 500,
+    height          : 500,
+    backgroundColor : '#dda022',
+    opacity         : '.05',
+    borderRadius    : 250
 }
+'.shape_0'  : { top : 0 },
+'.shape_1'  : { top : 1 },
+'.shape_2'  : { top : 2 },
+'.shape_3'  : { top : 3 },
+'.shape_4'  : { top : 4 },
+'.shape_5'  : { top : 5 },

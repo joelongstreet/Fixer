@@ -1,5 +1,21 @@
 <Alloy>
     <Window class='window'>
+        <!-- <View id='circle' class='circle'>
+            <View class='shape shape_0'></View>
+            <View class='shape shape_1'></View>
+            <View class='shape shape_2'></View>
+            <View class='shape shape_3'></View>
+            <View class='shape shape_4'></View>
+            <View class='shape shape_5'></View>
+        </View>
+        <View id='circle2' class='circle'>
+            <View class='shape shape_0'></View>
+            <View class='shape shape_1'></View>
+            <View class='shape shape_2'></View>
+            <View class='shape shape_3'></View>
+            <View class='shape shape_4'></View>
+            <View class='shape shape_5'></View>
+        </View> -->
         <ScrollableView id='container'></ScrollableView>
         <Label id='result'>Do Nothing...</Label>
     </Window>
