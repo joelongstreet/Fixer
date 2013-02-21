@@ -7,6 +7,13 @@
         backFillStart:false
     },
 },
+'ImageView' : {
+    backgroundColor     : '#000',
+    backgroundImage     : 'load_screen.png',
+    top                 : -20,
+    width               : Ti.Platform.displayCaps.platformWidth,
+    height              : Ti.Platform.displayCaps.platformHeight
+},
 'Label'     : {
     width       : 280,
     height      : Ti.UI.Size,

@@ -59,6 +59,14 @@ setInterval(animate_circles, 30000);*/
 // ---->
 
 
-// OPEN!!!
+//Fade Out StartUp
+var fade_startup = Ti.UI.createAnimation({opacity : 0, duration : 500});
+$.startup.animate(fade_startup)
+fade_startup.addEventListener('complete', function(){
+    $.index.remove($.startup);
+});
+
+
+//OPEN!!!
 $.index.open();
 // ---->

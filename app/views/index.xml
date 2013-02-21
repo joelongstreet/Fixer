@@ -18,5 +18,6 @@
         </View> -->
         <ScrollableView id='container'></ScrollableView>
         <Label id='result'>Do Nothing...</Label>
+        <ImageView id='startup'></ImageView>
     </Window>
 </Alloy>
