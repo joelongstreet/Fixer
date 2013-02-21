@@ -12,3 +12,5 @@ this.me.update_value = function(val){
 this.me.name = 'Actual Gravity';
 $.label.text = 'Actual Gravity';
 this.me.update_value(this.me.get_value());
+
+console.log(this);

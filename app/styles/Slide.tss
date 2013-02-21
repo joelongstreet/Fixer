@@ -7,9 +7,7 @@
     height      : Ti.UI.Size,
     color       : '#fff',
     right       : 20,
-    textAlign   : Ti.UI.TEXT_ALIGNMENT_RIGHT,
-    shadowColor : 'rgba(0,0,0,.5)',
-    shadowOffset: {x:1, y:1}
+    textAlign   : Ti.UI.TEXT_ALIGNMENT_RIGHT
 },
 '#label'    : {
     top         : 40,

@@ -20,11 +20,15 @@ for(var i=0; i<slides.length; i++){
     });
 }
 
+Ti.App.addEventListener('scroll', function(val){
+    $.container.setScrollingEnabled(val.result)
+});
+
 $.index.open();
 
 Ti.Gesture.addEventListener('shake', function(){
     calculator.reset();
-    for(var i = 0; i < 200; i++){
+    for(var i = 0; i < 30; i++){
         bubble = Alloy.createController('Bubble');
         bubble.append_to_view($.index);
     }

@@ -1,5 +1,4 @@
 function Slide(){
-    var start_point = 0;
     var last_point  = 0;
 
     this.set_value = function(val){
@@ -26,7 +25,7 @@ function Slide(){
     };
 
     this.touch_start = function(e){
-        start_point = e.y;
+        last_point = e.y;
 
         if(e.y > Ti.Platform.displayCaps.platformHeight*.75){
             this.set_value(-1);
@@ -37,6 +36,7 @@ function Slide(){
 
     this.touch_move = function(e){
         if(Math.abs(last_point - e.y) > 20){
+            Ti.App.fireEvent('scroll', { result : false });
             if(last_point > e.y){
                 this.set_value(1);
             } else{
@@ -48,6 +48,7 @@ function Slide(){
 
     this.touch_end = function(e){
         last_point = e.y;
+        Ti.App.fireEvent('scroll', { result : true });
     };
 
     this.round = function(val, decimals){
@@ -73,5 +74,5 @@ $.container.addEventListener('touchmove', function(e) {
     self.me.touch_move(e);
 });
 $.container.addEventListener('touchend', function(e) {
-    self.me.touch_move(e);
+    self.me.touch_end(e);
 });
