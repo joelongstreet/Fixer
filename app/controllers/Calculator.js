@@ -25,12 +25,6 @@ exports.calculate = function(e){
     return result;
 }
 
-
-exports.reset = function(){
-    props = Alloy.Globals.defaults;
-}
-
-
 var round = function(val, decimals){
     var rounder = 1;
 

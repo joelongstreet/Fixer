@@ -1,4 +1,4 @@
-// Setup Default Values
+// ----> Setup Default Values
 Alloy.Globals.defaults = {
     'Target Gravity'  : 1.054,
     'Actual Gravity'  : 1.048,
@@ -7,7 +7,8 @@ Alloy.Globals.defaults = {
 };
 // ---->
 
-// Build Slides and Calculate Function
+
+// ----> Build Slides and Calculate Function
 var calculator      = Alloy.createController('Calculator');
 var slides          = [
     Alloy.createController('TargetGravity'),
@@ -25,25 +26,30 @@ for(var i=0; i<slides.length; i++){
 // ---->
 
 
-// Listen for Global Events
+// ----> Listen for Global Events
+    // -> Start and Stop horizontal Page Scrolling
 Ti.App.addEventListener('scroll', function(val){
     $.container.setScrollingEnabled(val.result)
 });
-
+    // -> Bubbles!
 Ti.Gesture.addEventListener('shake', function(){
-    calculator.reset();
     for(var i = 0; i < 30; i++){
         bubble = Alloy.createController('Bubble');
         bubble.append_to_view($.index);
     }
-    for(var i=0; i<slides.length; i++){
-        slides[i].me.set_value()
+});
+    // -> Show and Hide the Help Screen
+Ti.App.addEventListener('help', function(e) {
+    if(e.value == 'close'){
+        tooltip.close($.index, $.wrapper);
+    } else {
+        tooltip.open($.index, $.wrapper);
     }
 });
 // ---->
 
 
-// Some Eye Candy
+// ----> Some Eye Candy
 var bubble_int = setInterval(function(){
     bubble = Alloy.createController('Bubble');
     bubble.append_to_view($.index);
@@ -59,40 +65,25 @@ setInterval(animate_circles, 30000);*/
 // ---->
 
 
-//Fade Out StartUp
+// ----> Fade Out StartUp
 var fade_startup = Ti.UI.createAnimation({opacity : 0, duration : 500});
 $.startup.animate(fade_startup)
 fade_startup.addEventListener('complete', function(){
     $.index.remove($.startup);
 });
+// ---->
 
 
-//Help Screens
-var open_help = function(){
-    var fade            = Ti.UI.createAnimation({opacity : 0, duration : 700});
-    var tooltip_views   = Alloy.createController('Tooltip').getTopLevelViews();
-
-    $.wrapper.animate(fade);
-    for(var i=0; i<tooltip_views.length;i++){
-        $.index.add(tooltip_views[i]);
-    }
-}
-
-var close_help = function(){
-    var fade = Ti.UI.createAnimation({opacity : 1, duration : 700});
-    $.wrapper.animate(fade);
-}
-
-Ti.App.addEventListener('help', function(e) {
-    if(e.value == 'close'){
-        close_help()
-    } else{
-        open_help()
-    }
+// ----> Make the Help Screens
+var tooltip = Alloy.createController('Tooltip');
+Ti.App.fireEvent('help', { value : 'open' });
+$.index.addEventListener('longpress', function(){
+    Ti.App.fireEvent('help', { value : 'open' });
 });
 
-open_help()
+// ---->
 
-//OPEN!!!
+
+// ----> Start the app already
 $.index.open();
 // ---->

@@ -1,6 +1,5 @@
 <Alloy>
-    <View id='wrapper'>
-        <View class='shadow'></View>
+    <View id='container'>
         <ScrollableView id='instructions'>
             <View class='tip'>
                 <Label class='heading'>1.014 Fixer</Label>

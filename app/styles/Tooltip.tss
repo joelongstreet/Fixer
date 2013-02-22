@@ -1,4 +1,5 @@
-'.shadow'   : {
+ '#container': {
+    opacity             : 0,
     backgroundColor     : 'rgba(0,0,0,.25)',
     width               : Ti.Platform.displayCaps.platformWidth,
     height              : Ti.Platform.displayCaps.platformHeight
@@ -9,7 +10,7 @@
 '#close'     : {
     color               : '#fff',
     right               : 20,
-    top                 : 10,
+    top                 : 20,
     width               : Ti.UI.Size,
     height              : 30,
     font                : {
@@ -21,13 +22,13 @@
 '.tip'      : {
     layout              : 'vertical',
     backgroundColor     : 'rgba(0,0,0,.5)',
-    borderColor         : 'rgba(255,255,255,.1)',
+    borderColor         : 'rgba(255,255,255,.5)',
     borderRadius        : 7,
-    borderWidth         : 3,
+    borderWidth         : 2,
     right               : 35,
     left                : 35,
-    top                 : 60,
-    height              : '70%'
+    top                 : 80,
+    height              : '60%'
 },
 'Label'         : {
     color               : '#fff'
