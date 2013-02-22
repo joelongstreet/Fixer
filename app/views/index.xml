@@ -17,7 +17,7 @@
             <View class='shape shape_5'></View>
         </View> -->
         <ScrollableView id='container'></ScrollableView>
-        <Label id='result'>Do Nothing...</Label>
+        <Label id='result'>Your beer is perfect, change nothing...</Label>
         <ImageView id='startup'></ImageView>
     </Window>
 </Alloy>

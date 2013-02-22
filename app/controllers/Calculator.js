@@ -9,14 +9,18 @@ exports.calculate = function(e){
     var gravity_points      = 1000*(corrected_gravity - 1)*props['Volume'];
     var target_points       = 1000*(props['Target Gravity'] - 1)*props['Volume'];
     var result              = null;
-
+    var value               = 0;
     if(corrected_gravity > props['Target Gravity']) {
-        result = 'Add ' + round(gravity_points/target_points, 2) + ' gallons of water';
+        value   = round(gravity_points/target_points - 1, 2);
+        if(value != 0) { result  = 'Add ' + value + ' gallons of water'; }
     }
     else {
-        diff = target_points - gravity_points
-        result = 'Add ' + round(diff/45, 2) + ' lbs of DME';
+        diff    = target_points - gravity_points;
+        value   = round(diff/45, 2);
+        if(value != 0) { result  = 'Add ' + value + ' lbs of DME'; }
     }
+
+    if(value == 0){ result = 'Your beer is perfect, change nothing...'; }
 
     return result;
 }
