@@ -1,0 +1,64 @@
+'.shadow'   : {
+    backgroundColor     : 'rgba(0,0,0,.25)',
+    width               : Ti.Platform.displayCaps.platformWidth,
+    height              : Ti.Platform.displayCaps.platformHeight
+},
+'#instructions' : {
+    width               : Ti.Platform.displayCaps.platformWidth
+},
+'#close'     : {
+    color               : '#fff',
+    right               : 20,
+    top                 : 10,
+    width               : Ti.UI.Size,
+    height              : 30,
+    font                : {
+        fontFamily          : 'HelveticaNeue-UltraLight',
+        fontSize            : 50,
+        fontWeight          : 'bold'
+    }
+},
+'.tip'      : {
+    layout              : 'vertical',
+    backgroundColor     : 'rgba(0,0,0,.5)',
+    borderColor         : 'rgba(255,255,255,.1)',
+    borderRadius        : 7,
+    borderWidth         : 3,
+    right               : 35,
+    left                : 35,
+    top                 : 60,
+    height              : '70%'
+},
+'Label'         : {
+    color               : '#fff'
+}
+'.heading'      : {
+    top                 : 20,
+    textAlign           : Ti.UI.TEXT_ALIGNMENT_CENTER,
+    width               : Ti.UI.Size,
+    font                : {
+        fontFamily          : 'HelveticaNeue-UltraLight',
+        fontSize            : 33
+    }
+},
+'.content' : {
+    color               : '#fff',
+    top                 : 15,
+    left                : 20,
+    right               : 20,
+    width               : Ti.UI.Size,
+    textAlign           : Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font                : {
+        fontFamily          : 'HelveticaNeue-UltraLight',
+        fontSize            : 20
+    }
+},
+'.name'                 : {
+    top                 : 10,
+    font                : {
+        fontFamily          : 'HelveticaNeue-UltraLight',
+        fontSize            : 20,
+        fontWeight          : 'bold',
+        fontStyle           : 'italic'
+    }
+}

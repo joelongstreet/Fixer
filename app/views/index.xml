@@ -16,8 +16,10 @@
             <View class='shape shape_4'></View>
             <View class='shape shape_5'></View>
         </View> -->
-        <ScrollableView id='container'></ScrollableView>
-        <Label id='result'>Your beer is perfect, change nothing...</Label>
-        <ImageView id='startup'></ImageView>
+        <View id='wrapper'>
+            <ScrollableView id='container'></ScrollableView>
+            <Label id='result'>Your beer is perfect, change nothing...</Label>
+            <ImageView id='startup'></ImageView>
+        </View>
     </Window>
 </Alloy>

@@ -1,0 +1,25 @@
+<Alloy>
+    <View id='wrapper'>
+        <View class='shadow'></View>
+        <ScrollableView id='instructions'>
+            <View class='tip'>
+                <Label class='heading'>1.014 Fixer</Label>
+                <Label class='content'>Fixer will help you make corrections to the specific gravity of your wort. You'll need to know the target gravity, current gravity, temperature, and final volume.</Label>
+            </View>
+            <View class='tip'>
+                <Label class='heading'>Adjustments</Label>
+                <Label class='content'>Slide your finger up and down the screen to make adjustments to either gravity, temperature, or volume.</Label>
+            </View>
+            <View class='tip'>
+                <Label class='heading'>Units</Label>
+                <Label class='content'>Tap on any unit of measurement to change it's value. Gallons turns to liters, lbs turns to kilos, DME turns to LME.</Label>
+            </View>
+            <View class='tip'>
+                <Label class='heading'>Extra Help</Label>
+                <Label class='content'>To see this screen at any time, just tap and hold. Or write me:</Label>
+                <Label class='name content' id='email'>Joe Longstreet</Label>
+            </View>
+        </ScrollableView>
+        <Label id='close'>×</Label>
+    </View>
+</Alloy>

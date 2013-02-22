@@ -67,6 +67,32 @@ fade_startup.addEventListener('complete', function(){
 });
 
 
+//Help Screens
+var open_help = function(){
+    var fade            = Ti.UI.createAnimation({opacity : 0, duration : 700});
+    var tooltip_views   = Alloy.createController('Tooltip').getTopLevelViews();
+
+    $.wrapper.animate(fade);
+    for(var i=0; i<tooltip_views.length;i++){
+        $.index.add(tooltip_views[i]);
+    }
+}
+
+var close_help = function(){
+    var fade = Ti.UI.createAnimation({opacity : 1, duration : 700});
+    $.wrapper.animate(fade);
+}
+
+Ti.App.addEventListener('help', function(e) {
+    if(e.value == 'close'){
+        close_help()
+    } else{
+        open_help()
+    }
+});
+
+open_help()
+
 //OPEN!!!
 $.index.open();
 // ---->
