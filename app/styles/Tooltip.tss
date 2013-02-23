@@ -1,4 +1,5 @@
  '#container' : {
+    opacity             : 0,
     height              : Ti.UI.Size
 },
 '#instructions' : {
