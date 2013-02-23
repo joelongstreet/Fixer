@@ -4,7 +4,7 @@
         <View id='circle2' class='circle'></View> -->
         <View id='wrapper'>
             <ScrollableView id='container'></ScrollableView>
-            <Label id='result'>Your beer is perfect, change nothing...</Label>
+            <Require type='view' src='Result' id='Result' />
             <ImageView id='startup'></ImageView>
         </View>
     </Window>

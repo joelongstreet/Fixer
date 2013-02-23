@@ -5,10 +5,10 @@ this.me.modifier = function(val){
     return value;
 };
 
-this.me.update_value = function(val){
+this.me.update_view = function(val){
     $.value.text = this.round(val, 3);
 };
 
 this.me.name = 'Target Gravity';
 $.label.text = 'Target Gravity';
-this.me.update_value(this.me.get_value());
+this.me.update_view(this.me.get_value());

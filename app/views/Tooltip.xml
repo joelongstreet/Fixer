@@ -16,7 +16,7 @@
             <View class='tip'>
                 <View class='wrap'>
                     <Label class='heading'>Units</Label>
-                    <Label class='content'>Tap on any unit of measurement to change it's value. Gallons turns to liters, lbs turns to kilos, DME turns to LME.</Label>
+                    <Label class='content'>Tap on any unit of measurement to change it's value. Gallons turns to Litres, Pounds turns to Kilograms, Dry Malt Extract turns to Liquid Malt Extract.</Label>
                 </View>
             </View>
             <View class='tip'>

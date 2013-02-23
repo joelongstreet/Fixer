@@ -14,28 +14,6 @@
     width               : Ti.Platform.displayCaps.platformWidth,
     height              : Ti.Platform.displayCaps.platformHeight
 },
-'Label'     : {
-    width       : Ti.Platform.displayCaps.platformWidth,
-    height      : Ti.UI.Size,
-    color       : '#fff',
-    width       : '90%',
-    left        : '5%',
-    bottom      : 40,
-    textAlign   : Ti.UI.TEXT_ALIGNMENT_CENTER,
-    font        : {
-        fontFamily  : 'HelveticaNeue-UltraLight',
-        fontSize    : 33
-    }
-},
-'Label[platform=android]': {
-    width       : '80%',
-    left        : '10%',
-    bottom      : 35,
-    font        : {
-        fontFamily  : 'Roboto-Thin',
-        fontSize    : 33
-    }
-},
 '.circle'   : {
     top             : 250,
     left            : 0,

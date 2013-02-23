@@ -16,6 +16,14 @@
         fontSize    : 33
     }
 },
+'#units'    : {
+    right       : 20,
+    top         : 47,
+    font        : {
+        fontFamily  : 'HelveticaNeue-UltraLight',
+        fontSize    : 25
+    }
+},
 '#value' : {
     top         : 80,
     font        : {

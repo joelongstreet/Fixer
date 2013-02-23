@@ -82,10 +82,8 @@
 '.name'                 : {
     top                 : 10,
     font                : {
-        fontFamily          : 'HelveticaNeue-UltraLight',
-        fontSize            : 20,
-        fontWeight          : 'bold',
-        fontStyle           : 'italic'
+        fontFamily          : 'HelveticaNeue-UltraLightItalic',
+        fontSize            : 20
     }
 },
 '.name[platform=android]' : {
