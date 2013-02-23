@@ -59,7 +59,7 @@ var calculate = function(e){
 
         //Calculate and set extract value
         var points = value;
-        if(extract_type == 'Liquid Malt Extract') {     points*=.8;      }
+        if(extract_type == 'Liquid Malt Extract') {     points*=1.2;      }
         if(extract_units == 'Kilograms') {  points*=.453592; }
         $.extract_value.text = ' ' + round(points, 2) + ' ';
 
