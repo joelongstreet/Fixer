@@ -1,5 +1,7 @@
 '#bubble' : {
-    backgroundImage     : 'bubble.png',
-    mode                : Ti.UI.iOS.BLEND_MODE_OVERLAY,
+    backgroundImage     : '/bubble.png',
     opacity             : '.3'
+},
+'#bubble[platform=ios]': {
+    mode                : Ti.UI.iOS.BLEND_MODE_COLOR
 }

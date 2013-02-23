@@ -1,12 +1,12 @@
- '#container': {
+ '#container' : {
     opacity             : 0,
-    backgroundColor     : 'rgba(0,0,0,.25)',
+    backgroundColor     : '#25000000',
     width               : Ti.Platform.displayCaps.platformWidth,
     height              : Ti.Platform.displayCaps.platformHeight
 },
 '#instructions' : {
     width               : Ti.Platform.displayCaps.platformWidth
-},
+}
 '#close'     : {
     color               : '#fff',
     right               : 20,
@@ -19,16 +19,28 @@
         fontWeight          : 'bold'
     }
 },
-'.tip'      : {
+'#close[platform=android]' : {
+    top         : 30,
+    height      : Ti.UI.Size,
+    font        : {
+        fontFamily  : 'Roboto-Thin',
+        fontSize    : 50,
+        fontWeight  : 'bold'
+    }
+},
+'.wrap'         : {
     layout              : 'vertical',
-    backgroundColor     : 'rgba(0,0,0,.5)',
-    borderColor         : 'rgba(255,255,255,.5)',
+    backgroundColor     : '#50000000',
+    borderColor         : '#50ffffff',
     borderRadius        : 7,
     borderWidth         : 2,
-    right               : 35,
-    left                : 35,
     top                 : 80,
-    height              : '60%'
+    left                : '10%',
+    width               : '80%',
+    height              : '75%'
+},
+'.wrap[platform=android]' : {
+    top                 : 120
 },
 'Label'         : {
     color               : '#fff'
@@ -42,16 +54,29 @@
         fontSize            : 33
     }
 },
+'.heading[platform=android]' : {
+    font        : {
+        fontFamily  : 'Roboto-Thin',
+        fontSize    : 33
+    }
+},
 '.content' : {
     color               : '#fff',
     top                 : 15,
     left                : 20,
     right               : 20,
     width               : Ti.UI.Size,
+    height              : Ti.UI.Size,
     textAlign           : Ti.UI.TEXT_ALIGNMENT_CENTER,
     font                : {
         fontFamily          : 'HelveticaNeue-UltraLight',
         fontSize            : 20
+    }
+},
+'.content[platform=android]' : {
+    font        : {
+        fontFamily  : 'Roboto-Thin',
+        fontSize    : 20
     }
 },
 '.name'                 : {
@@ -61,5 +86,13 @@
         fontSize            : 20,
         fontWeight          : 'bold',
         fontStyle           : 'italic'
+    }
+},
+'.name[platform=android]' : {
+    font        : {
+        fontFamily  : 'Roboto-Thin',
+        fontSize    : 20,
+        fontStyle   : 'italic',
+        fontWeight  : 'bold'
     }
 }

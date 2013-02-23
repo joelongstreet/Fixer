@@ -22,4 +22,19 @@
         fontFamily  : 'HelveticaNeue-UltraLight',
         fontSize    : 55
     }
+},
+'#label[platform=android]'    : {
+    top         : 35,
+    font        : {
+        fontFamily  : 'Roboto-Thin',
+        fontSize    : 33
+    }
+},
+'#value[platform=android]' : {
+    top         : 70,
+    font        : {
+        fontFamily  : 'Roboto-Thin',
+        fontSize    : 55
+    }
 }
+

@@ -83,11 +83,14 @@ $.index.addEventListener('longpress', function(){
 
 
 // ----> Show Help if your first time opening app
+Ti.App.fireEvent('help', { value : 'open' });
+/*
 var opened = Ti.App.Properties.getString('app_opened');
 if(!opened){
     Ti.App.fireEvent('help', { value : 'open' });
     Ti.App.Properties.setString('app_opened', true);
 }
+*/
 // ---->
 
 
