@@ -6,6 +6,10 @@ $.email.addEventListener('click', function(){
     emailDialog.open();
 });
 
+$.link.addEventListener('click', function(){
+    Ti.Platform.openURL('http://homebrew.stackexchange.com/questions/2231/didnt-hit-gravity-how-to-calculate-how-much-malt-extract-to-add-to-the-ferment');
+});
+
 $.close.addEventListener('click', function(){
     Ti.App.fireEvent('help', { value : 'close' });
 });

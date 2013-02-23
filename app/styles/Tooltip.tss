@@ -67,26 +67,26 @@
     right               : 20,
     width               : Ti.UI.Size,
     height              : Ti.UI.Size,
-    textAlign           : Ti.UI.TEXT_ALIGNMENT_CENTER,
+    textAlign           : Ti.UI.TEXT_ALIGNMENT_LEFT,
     font                : {
         fontFamily          : 'HelveticaNeue-UltraLight',
-        fontSize            : 20
+        fontSize            : 22
     }
 },
 '.content[platform=android]' : {
     font        : {
         fontFamily  : 'Roboto-Thin',
-        fontSize    : 20
+        fontSize    : 22
     }
 },
-'.name'                 : {
+'.link'                 : {
     top                 : 10,
     font                : {
         fontFamily          : 'HelveticaNeue-UltraLightItalic',
         fontSize            : 20
     }
 },
-'.name[platform=android]' : {
+'.link[platform=android]' : {
     font        : {
         fontFamily  : 'Roboto-Thin',
         fontSize    : 20,
