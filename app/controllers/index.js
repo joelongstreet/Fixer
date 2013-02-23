@@ -39,12 +39,10 @@ Ti.App.addEventListener('help', function(e) {
 
 
 // ----> Some Eye Candy
-/*
 var bubble_int = setInterval(function(){
     bubble = Alloy.createController('Bubble');
     bubble.append_to_view($.index);
 }, 350);
-*/
 /*
 var animator        = Alloy.createController('CircleAnimation');
 var animate_circles = function(){

@@ -1,17 +1,17 @@
 <Alloy>
     <View id='default_result' class='wrapper'>
-        <Label id='equilibrium'>Waiting for your instructions...</Label>
+        <Label id='equilibrium'>Awaiting your direction...</Label>
     </View>
     <View id='add_extract' class='wrapper'>
         <Label>Add </Label>
         <Label id='extract_value'>0</Label>
-        <Label id='extract_units'>Pounds</Label>
+        <Label id='extract_units' class='units'>Pounds</Label>
         <Label id='extract_type'>Dry Malt Extract</Label>
     </View>
     <View id='add_water' class='wrapper'>
         <Label>Add </Label>
         <Label id='water_value'>0</Label>
-        <Label id='water_units'>Gallons</Label>
+        <Label id='water_units' class='units'>Gallons</Label>
         <Label id='water_def'>Boiled Water</Label>
     </View>
 </Alloy>

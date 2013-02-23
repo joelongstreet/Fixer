@@ -15,15 +15,26 @@
     height              : Ti.Platform.displayCaps.platformHeight
 },
 '.circle'   : {
-    top             : 250,
-    left            : 0,
+    //top             : 250,
+    //left            : 0,
     width           : 500,
     height          : 500,
-    opacity         : '.3',  
     backgroundColor : '#dda022',
     opacity         : '.05',
     borderRadius    : 250
 },
 '.circle[platform=ios]': {
     mode            : Ti.UI.iOS.BLEND_MODE_COLOR,
+}
+'#circle1'  : {
+    top             : 260,
+    left            : -60
+},
+'#circle2'  : {
+    top             : 260,
+    left            : 60
+},
+'#circle3'  : {
+    top             : 280,
+    left            : -20
 }

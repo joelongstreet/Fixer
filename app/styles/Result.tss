@@ -1,8 +1,10 @@
 '.wrapper'  : {
+    layout      : 'horizontal',
     height      : 85,
     width       : '86%',
     left        : '7%',
-    bottom      : 25
+    bottom      : 25,
+    opacity     : 0
 }
 'Label'     : {
     height      : Ti.UI.Size,
@@ -21,21 +23,7 @@
         fontSize    : 33
     }
 },
-'#default_result' : {
-    layout      : 'horizontal',
-    opacity     : 1
-},
-'#add_extract'  : {
-    layout      : 'horizontal',
-    opacity     : 0
-},
-'#add_water'  : {
-    layout      : 'horizontal',
-    opacity     : 0
-},
-'#extract_type' : {
-    width       : '100%'
-},
-'#water_def' : {
-    width       : '100%'
-}
+
+'#default_result'   : { opacity     : 1},
+'#extract_type'     : { width       : '100%' },
+'#water_def'        : { width       : '100%' }
