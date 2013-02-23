@@ -3,7 +3,7 @@
     <deployment-targets>
         <target device="mobileweb">false</target>
         <target device="iphone">true</target>
-        <target device="ipad">true</target>
+        <target device="ipad">false</target>
         <target device="blackberry">false</target>
         <target device="android">true</target>
     </deployment-targets>
@@ -12,7 +12,7 @@
     <name>Fixer</name>
     <version>1.0</version>
     <publisher>Joe Longstreet</publisher>
-    <url>http://joelongstreet.com/1014/fixer.html</url>
+    <url>http://joelongstreet.com/1014#fixer</url>
     <description>A tool for homebrewers which assists in adjusting the gravity of wort.</description>
     <copyright>not specified</copyright>
     <icon>appicon.png</icon>
