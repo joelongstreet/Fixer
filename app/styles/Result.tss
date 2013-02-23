@@ -5,7 +5,10 @@
     left        : '7%',
     bottom      : 25,
     opacity     : 0
-}
+},
+'.wrapper[platform=android]' : {
+    height      : 100  
+},
 'Label'     : {
     height      : Ti.UI.Size,
     color       : '#fff',
@@ -15,12 +18,9 @@
     }
 },
 'Label[platform=android]': {
-    width       : '80%',
-    left        : '10%',
-    bottom      : 35,
     font        : {
         fontFamily  : 'Roboto-Thin',
-        fontSize    : 33
+        fontSize    : 36
     }
 },
 

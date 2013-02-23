@@ -46,3 +46,4 @@ build
 .settings
 todo.md
 Resources
+.fastdev.lock
