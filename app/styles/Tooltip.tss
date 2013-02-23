@@ -1,11 +1,9 @@
  '#container' : {
-    opacity             : 0,
-    backgroundColor     : '#25000000',
-    width               : Ti.Platform.displayCaps.platformWidth,
-    height              : Ti.Platform.displayCaps.platformHeight
+    height              : Ti.UI.Size
 },
 '#instructions' : {
-    width               : Ti.Platform.displayCaps.platformWidth
+    width               : Ti.Platform.displayCaps.platformWidth,
+    height              : Ti.UI.Size
 }
 '#close'     : {
     color               : '#fff',
@@ -30,17 +28,13 @@
 },
 '.wrap'         : {
     layout              : 'vertical',
-    backgroundColor     : '#50000000',
-    borderColor         : '#50ffffff',
-    borderRadius        : 7,
-    borderWidth         : 2,
-    top                 : 80,
-    left                : '10%',
-    width               : '80%',
-    height              : '75%'
+    top                 : 50,
+    left                : '3%',
+    width               : '94%',
+    height              : Ti.UI.Size
 },
 '.wrap[platform=android]' : {
-    top                 : 120
+    top                 : 90
 },
 'Label'         : {
     color               : '#fff'
@@ -80,9 +74,9 @@
     }
 },
 '.link'                 : {
-    top                 : 10,
+    top                 : 25,
     font                : {
-        fontFamily          : 'HelveticaNeue-UltraLightItalic',
+        fontFamily          : 'HelveticaNeue-Medium',
         fontSize            : 20
     }
 },

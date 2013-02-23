@@ -23,9 +23,6 @@
     opacity         : '.05',
     borderRadius    : 250
 },
-'.circle[platform=ios]': {
-    mode            : Ti.UI.iOS.BLEND_MODE_COLOR,
-}
 '#circle1'  : {
     top             : 260,
     left            : -60
