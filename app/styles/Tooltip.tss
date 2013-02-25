@@ -19,7 +19,7 @@
     }
 },
 '#close[platform=android]' : {
-    top         : 30,
+    top         : 10,
     height      : Ti.UI.Size,
     font        : {
         fontFamily  : 'Roboto-Thin',
@@ -35,7 +35,8 @@
     height              : Ti.UI.Size
 },
 '.wrap[platform=android]' : {
-    top                 : 90
+    width               : '90%',
+    left                : '5%'
 },
 'Label'         : {
     color               : '#fff'
@@ -50,6 +51,7 @@
     }
 },
 '.heading[platform=android]' : {
+    top         : 60,
     font        : {
         fontFamily  : 'Roboto-Thin',
         fontSize    : 33
