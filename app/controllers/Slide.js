@@ -68,6 +68,9 @@ $.container.addEventListener('touchmove', function(e) {
 $.container.addEventListener('touchend', function(e) {
     self.me.touch_end(e);
 });
-$.units.addEventListener('click', function(e){
+$.label.addEventListener('click', function(e){
+    self.me.switch_units();
+});
+$.value.addEventListener('click', function(e){
     self.me.switch_units();
 });
