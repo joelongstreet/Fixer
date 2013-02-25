@@ -43,16 +43,22 @@ var calculate = function(e){
 
     if(type == null && last_type != type){
         $.default_result.opacity = 1;
+        $.default_result.zIndex  = 1;
         $.add_extract.opacity    = 0;
         $.add_water.opacity      = 0;
+        $.add_extract.zIndex     = 0;
+        $.add_water.zIndex       = 0;
         $.equilibrium.text       = 'You have reched gravity equilibrium.';
     } else if(type == 'extract'){
 
         //Set and show the proper extract units and type
         if(last_type != type){
             $.add_extract.opacity       = 1;
-            $.add_water.opacity         = 0; 
-            $.default_result.opacity    = 0; 
+            $.add_extract.zIndex        = 1;
+            $.add_water.opacity         = 0;
+            $.default_result.opacity    = 0;
+            $.add_water.zIndex          = 0; 
+            $.default_result.zIndex     = 0;
         }
         $.extract_units.text = extract_units;
         $.extract_type.text  = extract_type;
@@ -65,9 +71,12 @@ var calculate = function(e){
 
     } else if(type == 'water'){
         if(last_type != type){
-            $.add_water.opacity         = 1;
-            $.add_extract.opacity       = 0;
-            $.default_result.opacity    = 0; 
+            $.add_water.opacity        = 1;
+            $.add_water.zIndex         = 1;
+            $.add_extract.opacity      = 0;
+            $.default_result.opacity   = 0;
+            $.add_extract.zIndex       = 0;
+            $.default_result.zIndex    = 0; 
         }
 
         var points = value;
