@@ -34,10 +34,6 @@
     width               : '94%',
     height              : Ti.UI.Size
 },
-'.wrap[platform=android]' : {
-    width               : '90%',
-    left                : '5%'
-},
 'Label'         : {
     color               : '#fff'
 }
@@ -51,10 +47,10 @@
     }
 },
 '.heading[platform=android]' : {
-    top         : 60,
+    top         : 80,
     font        : {
         fontFamily  : 'Roboto-Thin',
-        fontSize    : 33
+        fontSize    : 45
     }
 },
 '.content' : {
@@ -71,22 +67,23 @@
     }
 },
 '.content[platform=android]' : {
+    left        : 50,
     font        : {
         fontFamily  : 'Roboto-Thin',
-        fontSize    : 22
+        fontSize    : 30
     }
 },
 '.link'                 : {
     top                 : 25,
     font                : {
         fontFamily          : 'HelveticaNeue-Medium',
-        fontSize            : 20
+        fontSize            : 22
     }
 },
 '.link[platform=android]' : {
     font        : {
         fontFamily  : 'Roboto-Thin',
-        fontSize    : 20,
+        fontSize    : 30,
         fontStyle   : 'italic',
         fontWeight  : 'bold'
     }

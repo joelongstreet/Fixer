@@ -68,6 +68,10 @@ var tooltip = Alloy.createController('Tooltip');
 $.index.addEventListener('longpress', function(){
     Ti.App.fireEvent('help', { value : 'open' });
 });
+$.container.addEventListener('longclick', function(){
+    alert('open help');
+    Ti.App.fireEvent('help', { value : 'open' });
+});
 // ---->
 
 
