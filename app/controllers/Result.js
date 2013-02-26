@@ -24,10 +24,14 @@ $.water_units.addEventListener('click', function(){
 
 var calculate = function(e){
     if(e) { props[e.type] = e.value; }
-    
-    // LOL, WHAT THE FUCK!?! - there's no way this is right
-    var hydro_calibration   = 60;
-    var corrected_gravity   = props['Actual Gravity'] * ((1.00130346 - 0.000134722124 * props['Temperature'] + 0.00000204052596 * Math.pow(props['Temperature'], 2) - 0.00000000232820948 * Math.pow(props['Temperature'], 3)) / (1.00130346 - 0.000134722124 * hydro_calibration + 0.00000204052596 * Math.pow(hydro_calibration, 2) - 0.00000000232820948 * Math.pow(hydro_calibration, 3)));
+
+    // These are more specific ways to correct gravity with a flexible hydrometer calibration
+    // They're in here just in case I ever want to switch back
+    // var hydro_calibration   = 60;
+    // var corrected_gravity   = props['Actual Gravity'] * ((1.00130346 - 0.000134722124 * props['Temperature'] + 0.00000204052596 * Math.pow(props['Temperature'], 2) - 0.00000000232820948 * Math.pow(props['Temperature'], 3)) / (1.00130346 - 0.000134722124 * hydro_calibration + 0.00000204052596 * Math.pow(hydro_calibration, 2) - 0.00000000232820948 * Math.pow(hydro_calibration, 3)));
+
+    var correction          = 1.313454 - 0.132674*props['Temperature'] + 0.002057793*Math.pow(props['Temperature'], 2) - 0.000002627634*Math.pow(props['Temperature'], 3);
+    var corrected_gravity   = props['Actual Gravity'] + (correction * 0.001);
     var gravity_points      = 1000*(corrected_gravity - 1)*props['Volume'];
     var target_points       = 1000*(props['Target Gravity'] - 1)*props['Volume'];
 
