@@ -2,29 +2,34 @@
     <View id='container'>
         <ScrollableView id='instructions'>
             <View class='wrap'>
-                <Label class='heading'>1.014 Fixer</Label>
-                <Label class='content'>Fixer will help you make corrections to the specific gravity of your wort immediately before entering the boil. You'll need to know the target gravity, current gravity, temperature, and final volume...</Label>
+                <Label class='heading'>Help Screens</Label>
+                <Label class='content'>To see these help messages again, tap and hold anywhere. Swipe left to see the next help screen...</Label>
             </View>
             <View class='wrap'>
-                <Label class='heading'>Adjustments</Label>
+                <Label class='heading'>What Fixer Does</Label>
+                <Label class='content'>Fixer will help you make corrections to the specific gravity of your wort by recommending either a water or malt extract extract addition. Calculations are based upon target gravity, current gravity, temperature, and final wort volume...</Label>
+            </View>
+            <View class='wrap'>
+                <Label class='heading'>When to use Fixer</Label>
+                <Label class='content'>Fixer is most efficiently used after all wort has left the mash tun and immediately before beginning the boil...</Label>
+            </View>
+            <View class='wrap'>
+                <Label class='heading'>Making Adjustments</Label>
                 <Label class='content'>Slide your finger up and down the screen to make adjustments to gravity, temperature, or volume. Notice Fixer's change in recommendation as you modify the wort's properties...</Label>
             </View>
             <View class='wrap'>
-                <Label class='heading'>Units</Label>
+                <Label class='heading'>Changing Units</Label>
                 <Label class='content'>Tap any unit of measurement to change it's value. Gallons turns to Litres, Pounds to Kilograms, Dry Malt Extract to Liquid Malt Extract...</Label>
             </View>
             <View class='wrap'>
-                <Label class='heading'>Help</Label>
-                <Label class='content'>To see these help messages again, tap and hold anywhere on screen. To learn more about how Fixer works, please swipe to the next screen...</Label>
-            </View>
-            <View class='wrap'>
                 <Label class='heading'>How it Works</Label>
-                <Label class='content'>There are a few extra things going on with Fixer, but for the most part, the formula follows the pattern described in the linked article...</Label>
-                <Label class='link content' id='link'>Link</Label>
+                <Label class='content'>Fixer's formula is inspired by a homebrew.stackexchange question. It uses a combination of Brewery.org's hydrometer correction as well as basic gravity and volume formulas which can be found in many homebrew text books...</Label>
+                <Label class='link content' id='se_link'>Stack Exchange Article</Label>
+                <Label class='link content' id='borg_link'>Brewery.org Hydrometer Temperature Correction</Label>
             </View>
             <View class='wrap'>
-                <Label class='heading'>Calibration</Label>
-                <Label class='content'>Fixer uses a formula which anticipates a hydrometer calibration of 60°F. I felt this was a normal level and would work for most people. If you feel otherwise, please let me know.</Label>
+                <Label class='heading'>Hydrometer Calibration</Label>
+                <Label class='content'>Fixer's formula anticipates a hydrometer calibration of 60°F. I felt this was a normal level and would work for most people. If you feel otherwise, please let me know...</Label>
             </View>
             <View class='wrap'>
                 <Label class='heading'>Contact</Label>

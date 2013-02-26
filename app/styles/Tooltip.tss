@@ -9,7 +9,7 @@
 '#close'     : {
     color               : '#fff',
     right               : 20,
-    top                 : 20,
+    top                 : 15,
     width               : Ti.UI.Size,
     height              : 30,
     font                : {
@@ -55,7 +55,7 @@
 },
 '.content' : {
     color               : '#fff',
-    top                 : 15,
+    top                 : 20,
     left                : 20,
     right               : 20,
     width               : Ti.UI.Size,
@@ -63,7 +63,7 @@
     textAlign           : Ti.UI.TEXT_ALIGNMENT_LEFT,
     font                : {
         fontFamily          : 'HelveticaNeue-UltraLight',
-        fontSize            : 22
+        fontSize            : 24
     }
 },
 '.content[platform=android]' : {
@@ -76,15 +76,13 @@
 '.link'                 : {
     top                 : 25,
     font                : {
-        fontFamily          : 'HelveticaNeue-Medium',
+        fontFamily          : 'HelveticaNeue-UltraLight',
         fontSize            : 22
     }
 },
 '.link[platform=android]' : {
     font        : {
         fontFamily  : 'Roboto-Thin',
-        fontSize    : 30,
-        fontStyle   : 'italic',
-        fontWeight  : 'bold'
+        fontSize    : 30
     }
 }

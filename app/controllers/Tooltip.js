@@ -6,8 +6,12 @@ $.email.addEventListener('click', function(){
     emailDialog.open();
 });
 
-$.link.addEventListener('click', function(){
-    Ti.Platform.openURL('http://homebrew.stackexchange.com/questions/2231/didnt-hit-gravity-how-to-calculate-how-much-malt-extract-to-add-to-the-ferment');
+$.se_link.addEventListener('click', function(){
+    Ti.Platform.openURL('http://homebrew.stackexchange.com/questions/4137/temperature-correction-for-specific-gravity');
+});
+
+$.borg_link.addEventListener('click', function(){
+    Ti.Platform.openURL('http://hbd.org/brewery/library/HydromCorr0992.html');
 });
 
 $.close.addEventListener('click', function(){
