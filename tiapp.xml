@@ -9,11 +9,11 @@
     </deployment-targets>
     <sdk-version>3.0.2.GA</sdk-version>
     <id>com.joelongstreet.fixer</id>
-    <name>Fixer</name>
+    <name>Fixer ₁₀₁₄</name>
     <version>1.0</version>
     <publisher>Joe Longstreet</publisher>
-    <url>http://joelongstreet.com/1014#fixer</url>
-    <description>A tool for homebrewers which assists in adjusting the gravity of wort.</description>
+    <url>http://joelongstreet.github.com/Fixer/</url>
+    <description>Fixer will help you make corrections to the specific gravity of your wort by recommending either a water or malt extract extract addition. Calculations are based upon target gravity, current gravity, temperature, and final wort volume.</description>
     <copyright>not specified</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
