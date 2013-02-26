@@ -68,12 +68,12 @@ $.container.addEventListener('touchmove', function(e) {
 $.container.addEventListener('touchend', function(e) {
     self.me.touch_end(e);
 });
-$.label.addEventListener('touchend', function(e){
+$.label.addEventListener('click', function(e){
     self.me.switch_units();
 });
-$.value.addEventListener('touchend', function(e){
+$.value.addEventListener('click', function(e){
     self.me.switch_units();
 });
-$.units.addEventListener('touchend', function(e){
+$.units.addEventListener('click', function(e){
     self.me.switch_units();
 });

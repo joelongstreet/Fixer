@@ -9,7 +9,7 @@
     </deployment-targets>
     <sdk-version>3.0.2.GA</sdk-version>
     <id>com.joelongstreet.fixer</id>
-    <name>Fixer ₁₀₁₄</name>
+    <name>Fixer</name>
     <version>1.0</version>
     <publisher>Joe Longstreet</publisher>
     <url>http://joelongstreet.github.com/Fixer/</url>

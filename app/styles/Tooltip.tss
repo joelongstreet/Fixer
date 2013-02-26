@@ -38,7 +38,7 @@
     color               : '#fff'
 }
 '.heading'      : {
-    top                 : 20,
+    top                 : 15,
     textAlign           : Ti.UI.TEXT_ALIGNMENT_CENTER,
     width               : Ti.UI.Size,
     font                : {
@@ -63,14 +63,14 @@
     textAlign           : Ti.UI.TEXT_ALIGNMENT_LEFT,
     font                : {
         fontFamily          : 'HelveticaNeue-UltraLight',
-        fontSize            : 24
+        fontSize            : 20
     }
 },
 '.content[platform=android]' : {
     left        : 50,
     font        : {
         fontFamily  : 'Roboto-Thin',
-        fontSize    : 30
+        fontSize    : 25
     }
 },
 '.link'                 : {
