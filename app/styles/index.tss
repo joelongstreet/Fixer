@@ -22,16 +22,4 @@
     backgroundColor : '#dda022',
     opacity         : '.05',
     borderRadius    : 250
-},
-'#circle1'  : {
-    top             : 260,
-    left            : -60
-},
-'#circle2'  : {
-    top             : 260,
-    left            : 60
-},
-'#circle3'  : {
-    top             : 280,
-    left            : -20
 }

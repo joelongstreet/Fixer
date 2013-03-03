@@ -43,14 +43,6 @@ var bubble_int = setInterval(function(){
     bubble = Alloy.createController('Bubble');
     bubble.append_to_view($.index);
 }, 350);
-/*
-var animator        = Alloy.createController('CircleAnimation');
-var animate_circles = function(){
-    $.circle.animate(animator.make_animation($.circle));
-    $.circle2.animate(animator.make_animation($.circle2));
-}
-animate_circles();
-setInterval(animate_circles, 30000);*/
 // ---->
 
 
@@ -68,15 +60,10 @@ var tooltip = Alloy.createController('Tooltip');
 $.index.addEventListener('longpress', function(){
     Ti.App.fireEvent('help', { value : 'open' });
 });
-$.container.addEventListener('longclick', function(){
-    alert('open help');
-    Ti.App.fireEvent('help', { value : 'open' });
-});
 // ---->
 
 
 // ----> Show Help if your first time opening app
-//Ti.App.fireEvent('help', { value : 'open' });
 var opened = Ti.App.Properties.getString('app_opened');
 if(!opened){
     Ti.App.fireEvent('help', { value : 'open' });

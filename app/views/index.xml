@@ -1,8 +1,5 @@
 <Alloy>
     <Window class='window'>
-        <!-- <View id='circle1' class='circle'></View>
-        <View id='circle2' class='circle'></View>
-        <View id='circle3' class='circle'></View> -->
         <View id='wrapper'>
             <ScrollableView id='container'></ScrollableView>
             <Require type='view' src='Result' id='Result' />
